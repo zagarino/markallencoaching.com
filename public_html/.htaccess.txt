@@ -1,0 +1,40 @@
+
+RewriteEngine on
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+<IfModule mod_rewrite.c> 
+    </IfModule>
+
+<IfModule mod_rewrite.c> 
+RewriteCond %{REQUEST_URI} (.*)/$
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule (.*)/$ $1.html [L]
+</IfModule>
+
+<IfModule mod_rewrite.c> 
+RewriteCond %{REQUEST_URI} (.*)/$
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule (.*)/$ $1.php [L]
+</IfModule>
+
+<IfModule mod_rewrite.c> 
+RewriteCond %{REQUEST_URI} (.*)/$
+RewriteCond %{REQUEST_FILENAME}\.cgi -f
+RewriteRule (.*)/$ $1.cgi [L]
+</IfModule>
+
+<IfModule mod_rewrite.c> 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f [OR]
+RewriteCond %{REQUEST_FILENAME}\.php -f [OR]
+RewriteCond %{REQUEST_FILENAME}\.cgi -f
+RewriteRule .* %{REQUEST_FILENAME}/ [R=301,L]
+
+> RewriteCond %{HTTP_HOST} ^markallencoaching\.scottzagarino\.com$ [OR]
+> RewriteCond %{HTTP_HOST} ^www\.markallencoaching\.scottzagarino\.com$
+> RewriteRule ^/?$ "http\:\/\/markallencoaching\.net\/" [R=301,L]
+

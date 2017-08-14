@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width">
+    <title>Youmax 10.0 - Complete Youtube Channel on your Website - Jquery plugin</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	
+	<!--jquery-->
+	<script src="https://markallencoaching.com/youmax/tools/jquery/jquery-1.9.1.min.js"></script>
+	
+	
+	<!--youmax-->
+	
+	<script src="https://markallencoaching.com/youmax/tools/js/source_unpacked/imagesloaded.pkgd.js"></script>
+	<script src="https://markallencoaching.com/youmax/tools/js/source_unpacked/masonry.pkgd.js"></script>
+	<script src="https://markallencoaching.com/youmax/tools/js/source_unpacked/magnific_popup_iframe_gallery.js"></script>
+	<script src="https://markallencoaching.com/youmax/toolsjs/source_unpacked/jquery.youmax.js"></script>
+	<script src="https://markallencoaching.com/youmax/toolsjs/source_unpacked/share.js"></script>
+	
+	
+	
+	<link rel="stylesheet" href="https://markallencoaching.com/youmax/css/src/youmax_trend.css"/>
+	<link rel="stylesheet" href="https://markallencoaching.com/youmax/css/src/youmax_common.css"/>
+	
+
+
+	
+	<style>
+
+      body {
+        font-family: Calibri;
+        font-size: 14px;
+		text-align:center;
+      }
+	  
+
+	  /*.youmax-load-more-div-click {background-color: #F95A5A !important;} */
+	  
+	  
+	/*For Inline Carousel mode*/
+  	#youmax-encloser {
+    	margin-top: 0px;
+    	margin-bottom: -20px;
+	}
+
+	.youmax, #youmax-video-list-div {
+	    /*background-color: white;*/
+	    border: none;
+	}
+
+	button#youmax-next-div, button#youmax-previous-div {
+	    margin-bottom: 25px;
+	}	
+	  
+		
+	</style>
+
+	</head>
+  <body>
+		<a href="http://demos.codehandling.com/youmax_js_8_gen/generator.html">
+		<h1>Youmax</h1>
+		</a>
+		
+		
+<br><br>		
+
+	<!--
+	<div id="youmax-top-ad">
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<ins class="adsbygoogle"
+		 style="display:block"
+		 data-ad-client="ca-pub-9832480721999360"
+		 data-ad-slot="8863556846"
+		 data-ad-format="auto"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</div>
+	-->
+
+	
+
+<div id="youmax" class="youmax">
+</div>
+
+
+<!--
+<div id="youmax2" class="youmax">
+</div>
+-->
+
+
+<br/><br/>
+
+<a href="http://demos.codehandling.com/youmax_js_doc/youmax-javascript-documentation.html">See how to use this plugin - at codehandling</a>
+
+
+<!--
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O-RgquKVTPE?playsinline=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+-->
+
+
+<br/><br/><br/>
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+
+
+
+
+	<script>
+	
+
+
+	
+	$("#youmax").youmax({
+		//apiKey:"AIzaSyAlhAqP5RS7Gxwg_0r_rh9jOv_5WfaJgXw",
+		apiKey:" AIzaSyC_CTRssKGaPvDoQRUvX61LKIGlPxptcSg",
+		clientId:"852630836149-rhe74kbvb8vetj7btd6vlqt0p82f1q6a.apps.googleusercontent.com",
+		
+		
+		youtube_channel_uploads:[
+			{
+				url:"https://www.youtube.com/playlist?list=PLAfBX0JMR6J0xJRHBAb6e9_tuOHrk--k3",
+				name:"Mark Allen Coaching",
+				selected:true
+			},
+			{
+				url:"",
+				name:"",
+				
+			}	
+		],
+
+		
+		
+		youtube_channel_playlists:[
+			{
+				url:"https://www.youtube.com/playlist?list=PLAfBX0JMR6J0xJRHBAb6e9_tuOHrk--k3",
+				name:"Mark Allen Playlist",
+				
+				
+			}			
+		],
+
+		
+		//relayoutOnCreate:true,
+		
+		
+		
+		channel:"https://www.youtube.com/playlist?list=PLAfBX0JMR6J0xJRHBAb6e9_tuOHrk--k3",
+
+		
+		displayVideo:"popup",
+		alwaysUseDropdown:false,
+		skin:"trend",
+		maxResults:15,
+		maxContainerWidth:950,
+		autoPlayVideo:true,
+		displayFirstVideoOnLoad:false,
+		linkNewPages:true,
+		searchBoxScope:"channel",
+		videoProtocol:"https:",
+		autoLoadComments: false,
+		alignPopupToTop: true,
+		commentOrder:"relevance", //time|relevance
+		//featuredVideo:'https://www.youtube.com/watch?v=nWivGrCKo4Y',
+		
+	
+		
+		playlistSearchFile:'./json/searchlist.json',
+		userWebsite:"http://www.codehandling.com",
+		videoMode:"wide",
+		shareLink:"youtube",
+		facebookAppId:"",
+		widgetMode:false,
+		
+		showTitleInVideoPlayer:false,
+		playlistAction:"showvideos",
+		
+		viewCountType:"abbr",
+		likeCommentCountType:"abbr",
+		showEvents:true,
+		loadMode:"paginate-bottom", //paginate-sides, paginate-bottom
+		hideHeader:false,
+		hideNavigation:false,
+		hideComments:false,
+		//loadButtonSize:"large",
+		videoPlayerTheme:"light",
+		showTextInsteadOfIcons:false,
+		loadButtonSize:"large",
+		
+		headerCountType:"abbr",
+		
+		//minVideoContainerHeight:310,
+		
+		translatorFile:"./json/translation.json",
+		
+		
+		oneColumnThumbnailWidth:'90%',
+		oneColumnThumbnailLeftRightMargin:'5%',
+		
+		advertisementFile:"./json/advertisement.json",
+
+
+		tabStyle:"wire",
+		 
+		//For Block Tabs
+		tabBackgroundColor:"#f5f5f5",
+		tabTextColor:"#929090",
+		tabHoverBackgroundColor:"rgba(106, 106, 106, 0.09)",
+		tabActiveBackgroundColor:"#ACACAC",
+		tabActiveTextColor:"white",
+		
+		
+		//For Wire Tabs
+		tabBackgroundColor:"green",
+		tabTextColor:"#929090",
+		tabHoverColor:"#4E4E4E",
+		tabActiveBackgroundColor:"green",
+		tabActiveTextColor:"green",
+		
+
+		//Youmax Background Color
+		youmaxBackgroundColor:"#fff",
+
+		//Load More Buttons
+		loadmoreButtonBackgroundColor:"rgb(212, 212, 212)",
+		loadmoreButtonTextColor:"#666",
+		loadmoreButtonHoverBackgroundColor:"#383838",
+		loadmoreButtonHoverTextColor:"white",
+
+		//Grid colors
+		gridItemBackgroundColor:"white",
+		gridItemSeparatorColor:"#e2e2e2",
+
+	});
+	
+
+
+
+
+	</script>
+	
+
+  </body>
+</html>
+
+
+

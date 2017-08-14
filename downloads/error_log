@@ -1,0 +1,32 @@
+[09-Feb-2017 21:08:47 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[09-Feb-2017 21:08:47 UTC] PHP Warning:  PHP Startup: http: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[09-Feb-2017 21:08:47 UTC] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[09-Feb-2017 21:08:47 UTC] PHP Warning:  PHP Startup: mailparse: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[09-Feb-2017 21:08:47 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/54/usr/lib64/php/modules/oauth.so' - /usr/php/54/usr/lib64/php/modules/oauth.so: undefined symbol: zval_used_for_init in Unknown on line 0
+[09-Feb-2017 21:08:47 UTC] PHP Warning:  PHP Startup: oci8: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[09-Feb-2017 21:08:47 UTC] PHP Warning:  PHP Startup: uploadprogress: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[09-Feb-2017 14:08:47 America/Denver] PHP Notice:  Undefined index: acc in /home1/scottzag/public_html/markallencoaching/downloads/download.php on line 9

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Generate Facebook Access Token</title>
+<meta charset="UTF-8">
+	<script src="./jquery/jquery-1.9.1.min.js"></script>
+	
+	<style>
+		.main-box {
+			width: 30%;
+			min-width: 400px;
+			margin: 0px auto;
+			font-family: Calibri;
+			border: 1px solid #DCDCDC;
+			padding: 20px;
+			margin-top: 25px;
+		}
+		
+		#facebook_login {
+			display: inline-block;
+			margin: 10px 0px;
+			width: 100%;
+		}
+	
+		.token-holder {
+			display: inline-block;
+			height: auto;
+			margin: 10px 0px;
+			width: 100%;
+		}	
+		
+		input {
+			width: 80%;
+			margin: 4px;
+			padding: 4px;
+		}
+		
+		#user_name {
+			display: inline-block;
+			margin: 0px 10px;
+		}	
+		
+		.detail {
+			color: rgb(236, 96, 96);
+			font-size: 14px;
+		}
+		
+		#usage {
+			margin: 0px auto;
+			width: 50%;
+			min-width: 600px;
+			font-family: Calibri;
+			margin-top: 60px;
+			border: 1px solid #DCDCDC;
+			padding: 20px;
+		}
+		
+		.how-to-screen {
+			width:100%;
+		}
+		
+		h1.page-title {
+			text-align: center;
+			margin-bottom: 50px;
+			font-family: cursive;
+		}		
+		
+		.credit {
+			text-align: center;
+			font-family: Calibri;
+			margin-top: 24px;
+			margin-bottom: 25px;
+		}
+		
+		.generate{
+			background-color: #4e69a2;
+			border-color: #435a8b #3c5488 #334c83;
+			color: white;
+			text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+			border: 1px solid;
+			-webkit-border-radius: 2px;
+			-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+			-webkit-box-sizing: content-box;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 26px;
+			padding: 0 10px;
+			cursor:pointer;
+		}
+
+	</style>
+</head>
+<body>
+<script>
+
+	var temporary_token;
+	var permanent_token;
+	var app_id;
+	var app_secret;
+	
+	/*
+	// This is called with the results from from FB.getLoginStatus().
+	function statusChangeCallback(response) {
+		console.log('statusChangeCallback');
+		console.log(response);
+		if (response.status === 'connected') {
+			// Logged into your app and Facebook.
+			temporary_token = response.authResponse.accessToken;
+			console.log("Temporary Access Token : "+response.authResponse.accessToken);
+			$('#temporary_token').val(temporary_token);
+			displayName();
+			getPermanentToken();
+		} else if (response.status === 'not_authorized') {
+			// The person is logged into Facebook, but not your app.
+			document.getElementById('status').innerHTML = 'Please log ' +
+			'into this app.';
+		} else {
+			// The person is not logged into Facebook, so we're not sure if
+			// they are logged into this app or not.
+			console.log('Please log into Facebook.');
+		}
+	}*/
+
+	// This function is called when someone finishes with the Login
+	// Button.  See the onlogin handler attached to it in the sample
+	// code below.
+	/*function checkLoginState() {
+		FB.getLoginStatus(function(response) {
+			statusChangeCallback(response);
+		});
+	}*/
+
+	
+	//window.fbAsyncInit = function() {
+	init_facebook = function() {
+		console.log('Init Facebook called');
+		app_id = $('#app_id').val();
+		app_secret = $('#app_secret').val();
+		
+		FB.init({
+			appId      : app_id,
+			cookie     : true,  // enable cookies to allow the server to access the session
+			xfbml      : true,  // parse social plugins on this page
+			version    : 'v2.2' // use version 2.1
+		});
+
+		// Now that we've initialized the JavaScript SDK, we call 
+		// FB.getLoginStatus().  This function gets the state of the
+		// person visiting this page and can return one of three states to
+		// the callback you provide.  They can be:
+		//
+		// 1. Logged into your app ('connected')
+		// 2. Logged into Facebook, but not your app ('not_authorized')
+		// 3. Not logged into Facebook and can't tell if they are logged into
+		//    your app or not.
+		//
+		// These three cases are handled in the callback function.
+
+		
+		FB.login(function(response) {
+			console.log('Fb login');
+			console.log(response);
+			if (response.status === 'connected') {
+				// Logged into your app and Facebook.
+				temporary_token = response.authResponse.accessToken;
+				console.log("Temporary Access Token : "+response.authResponse.accessToken);
+				$('#temporary_token').val(temporary_token);
+				displayName();
+				getPermanentToken();
+			} else if (response.status === 'not_authorized') {
+				// The person is logged into Facebook, but not your app.
+				document.getElementById('status').innerHTML = 'Please log ' +
+				'into this app.';
+			} else {
+				// The person is not logged into Facebook, so we're not sure if
+				// they are logged into this app or not.
+				console.log('Please log into Facebook.');
+			}
+		}, {scope: 'publish_actions'});
+
+		/*
+		FB.getLoginStatus(function(response) {
+			statusChangeCallback(response);
+		});*/
+
+	};
+
+	// Load the SDK asynchronously
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "http://connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
+  
+
+	// Here we run a very simple test of the Graph API after login is
+	// successful.  See statusChangeCallback() for when this call is made.
+	function displayName() {
+		console.log('Welcome!  Fetching your information.... ');
+		FB.api('/me', function(response) {
+			console.log('Successful login for: ' + response.name);
+			$('#user_name').text("Hello, "+response.name+"");
+		});
+	}
+
+  
+	function getPermanentToken() {
+		console.log('Welcome!  Fetching permanent token.... ');
+		var apiUrl = "https://graph.facebook.com/oauth/access_token?client_id="+app_id+"&client_secret="+app_secret+"&grant_type=fb_exchange_token&fb_exchange_token="+temporary_token;
+
+		$.ajax({
+			url: apiUrl,
+			type: "GET",
+			async: true,
+			cache: true,
+			dataType: 'text',
+			success: function(response) { displayToken(response);},
+			error: function(html) { console.log(html) },
+			beforeSend: setHeader
+		});
+	}
+  
+	function displayToken(response) {
+		console.log(response);
+		permanent_token=response.substring(response.indexOf("access_token=")+13,response.indexOf("&"));
+		$('#permanent_token').val(permanent_token);
+	}
+  
+  	function setHeader(xhr) {
+		if(xhr && xhr.overrideMimeType) {
+			xhr.overrideMimeType("application/j-son;charset=UTF-8");
+		}
+	}
+
+  
+  
+  
+</script>
+
+<!--
+  Below we include the Login Button social plugin. This button uses
+  the JavaScript SDK to present a graphical Login button that triggers
+  the FB.login() function when clicked.
+-->
+<h1 class="page-title">Facebook Token Generator Script</h1>
+<div class="main-box">
+
+	<div class="token-holder">
+		Facebook App Id <br>
+		<input type="text" id="app_id" />
+	</div>
+
+	<div class="token-holder">
+		Facebook App Secret <br>
+		<input type="text" id="app_secret" />
+	</div>
+
+
+	<div id="facebook_login">
+		<button onclick="init_facebook();" class="generate">Generate Token</button>
+		<!--<fb:login-button scope="" onlogin="checkLoginState();">
+		</fb:login-button>-->
+		<div id="user_name"></div>
+	</div>
+
+	<div class="token-holder">
+		Temporary Access Token <span class="detail">(expires in 60 minutes)</span><br>
+		<input type="text" id="temporary_token" />
+	</div>
+
+	<div class="token-holder">
+		Permanent Access Token <span class="detail">(expires in 60 days)</span><br>
+		<input type="text" id="permanent_token" />
+	</div>
+
+</div>
+
+
+<div id="usage">
+<b>How To Use</b> 
+<br><br>
+This is a script to generate Facebook Access Tokens for your account.
+<br><br>
+1. You can either download this <a href="../access_token.zip">package</a> and host it on your server. This package must be hosted under the domain mentioned in the "Site URL" field in your Facebook App Settings.
+<br><br>
+2. Or You can temporarliy set your "Site URL" to "http://demos.codehandling.com/" and use the script hosted right here.
+<br><br>
+<img class="how-to-screen" src="./images/screen1.png"/>
+<br><br>
+Also, make sure the "Client OAuth Login" in set to "YES" in your App Advanced Settings
+<br><br>
+<img class="how-to-screen" src="./images/screen2.png"/>
+</div>
+
+<div class="credit"><a href="http://codecanyon.net/item/famax-facebook-fan-page-on-your-website/10287995?ref=codehandling">A Script Created for the Famax Plugin</a></div>
+
+</body>
+</html>
