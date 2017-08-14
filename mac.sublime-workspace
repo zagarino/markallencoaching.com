@@ -1,0 +1,398 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"MAR",
+				"margin-left"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"u",
+				"url()"
+			],
+			[
+				"marg",
+				"margin-top"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "services.html",
+			"settings":
+			{
+				"buffer_size": 28758,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: ",
+				"Snippet: <head>"
+			],
+			[
+				"open",
+				"Package Control: Install Local Dependency"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
+		"/Users/bigmac/local sites/amp-cards/sftp-config.json",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/SFTP/Default (OSX).sublime-keymap",
+		"/Users/bigmac/local sites/amp-cards/index.html",
+		"/Users/bigmac/local sites/amp-cards/main-template.html",
+		"/Users/bigmac/local sites/amp-cards/about.html",
+		"/Users/bigmac/local sites/amp-cards/amp-accordion.html",
+		"/Users/bigmac/local sites/amp-cards/IMX12.html",
+		"/Users/bigmac/local sites/amp-cards/page-timeline-1.html",
+		"/Users/bigmac/local sites/markallencoaching.com/index.html",
+		"/Users/bigmac/local sites/markallencoaching.com/rm/perspective.html",
+		"/Users/bigmac/local sites/markallencoaching.com/assets/css/combined.css",
+		"/Users/bigmac/local sites/markallencoaching.com/assets/css/styles.css",
+		"/Users/bigmac/local sites/markallencoaching.com/about.html",
+		"/Users/bigmac/local sites/markallencoaching.com/IMX12.html",
+		"/Users/bigmac/local sites/markallencoaching.com/im/82.html",
+		"/Users/bigmac/local sites/markallencoaching.com/assets/js/sign-min.js",
+		"/Users/bigmac/local sites/markallencoaching.com/sign.html",
+		"/Users/bigmac/local sites/markallencoaching.com/login.html",
+		"/Users/bigmac/local sites/markallencoaching.com/m/index.html",
+		"/Users/bigmac/local sites/markallencoaching.com/services.html",
+		"/Users/bigmac/local sites/markallencoaching.com/sftp-config.json",
+		"/Users/bigmac/local sites/SFTP/sftp-config-alt.json",
+		"/Users/bigmac/local sites/SFTP/sftp-config.json",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/markallencoaching.com",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/markallen.sublime-workspace",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/markallen.com",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/markallencoaching.com.sublime-project",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/bigmac/local sites/markallencoaching.com/markallencoachingcom.sublime-project",
+		"/Users/bigmac/local sites/markallencoaching.com/markallencoachingcom",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/bigmac/local sites/markallencoaching.info/assets/css/ftpsync.settings",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/FTPSync.sublime-settings",
+		"/Users/bigmac/local sites/markallencoaching.info/.git/config",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/markallencoaching.info",
+		"/Users/bigmac/.git/config",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/markallen.net",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/FTPSync/FTPSync.sublime-settings",
+		"/Users/bigmac/local sites/adminbag/dashboard2.html",
+		"/Users/bigmac/local sites/markallencoaching.net/assets/css/style.css",
+		"/Users/bigmac/local sites/markallencoaching.net/un: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun",
+		"/Users/bigmac/local sites/markallencoaching.net/.git/config",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/admin@markallencoaching.info",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/adminbag.sublime-project",
+		"/Users/bigmac/local sites/Autosmush/README.markdown",
+		"/Users/bigmac/local sites/Autosmush/autosmush",
+		"/Users/bigmac/local sites/Autosmush/sftp-config.json",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/autosmush",
+		"/Users/bigmac/local sites/Autosmush/aws-sdk-for-php-1.6 2.3/sdk.class.php",
+		"/Users/bigmac/Desktop/aws-credentials.txt",
+		"/Users/bigmac/local sites/Autosmush/config.inc.php",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/markallencoaching.net",
+		"/var/folders/_h/m04_z_111p5c44v_4zp3b2400000gp/T/sublime-sftp-browse-1499913633/markallencoaching.net/public_html/index.html",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/sftp-config.json",
+		"/local sites/adminbag/register.html",
+		"/local sites/adminbag/login.html",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/adminbag.sublime-project",
+		"/local sites/Adminbag/default/adminbag/untitled.sublime-project",
+		"/local sites/Adminbag/default/adminbag/assets/css/red-black.css",
+		"/local sites/Adminbag/default/adminbag/assets/css/main.css",
+		"/local sites/Adminbag/default/adminbag/assets/sftp-config.json",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/SFTP.errors.log",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/markallencoaching.admin2.sublime-project",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/admin2.sublime-workspace",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/admin2.sublime-project",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/markallencoaching.admin2.sublime-workspace",
+		"/local sites/Adminbag/default/adminbag/assets/css/buttons.css",
+		"/local sites/m/about.html",
+		"/local sites/m/index.html",
+		"/local sites/m/sftp-config.json",
+		"/local sites/ampmac/ampmac.sublime-project",
+		"/local sites/ampmac/index.html",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/markallen.app",
+		"/local sites/ampmac/page-profile-2.html",
+		"/local sites/markallencoaching/admin/dist/sftp-config.json",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/markallen.info",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/local sites/amphtml/amphtml1/examples/article-parallax.amp.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/local sites/Adminbag/default/adminbag/assets/css"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"col-sm-4",
+			"\"col-",
+			"p class=\"p-2",
+			"p class=p-2",
+			"p-2",
+			"<p class=\"p-2\">",
+			"<div id=\"box\">",
+			"box",
+			"https://ovpf.imgeng.in/",
+			"https://markallencoaching.com",
+			"#e35b5a"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"p",
+			"<p>",
+			"<div class=\"box\">",
+			"",
+			"https://markallencoaching.info",
+			"#ED261A"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "services.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 28758,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "mac.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"autosmush"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 252.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
