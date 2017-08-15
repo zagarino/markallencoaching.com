@@ -36,17 +36,28 @@
 	"buffers":
 	[
 		{
+			"file": "pricing.html",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 28757,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "services.html",
+			"file": "about.html",
 			"settings":
 			{
-				"buffer_size": 28758,
+				"buffer_size": 18356,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/styles.css",
+			"settings":
+			{
+				"buffer_size": 11341,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -65,7 +76,7 @@
 		[
 			[
 				"Package Control: ",
-				"Package Control: Install Package"
+				"Package Control: List Packages"
 			],
 			[
 				"",
@@ -80,7 +91,7 @@
 				"Package Control: Install Local Dependency"
 			]
 		],
-		"width": 485.0
+		"width": 392.0
 	},
 	"console":
 	{
@@ -101,9 +112,15 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/bigmac/local sites/markallencoaching.com",
+		"/Users/bigmac/local sites/markallencoaching.com/assets",
+		"/Users/bigmac/local sites/markallencoaching.com/assets/css"
 	],
 	"file_history":
 	[
+		"/Users/bigmac/local sites/markallencoaching.com/exercise-descriptions.html",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
 		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/User/SFTP.sublime-settings",
 		"/Users/bigmac/Library/Application Support/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
 		"/Users/bigmac/local sites/amp-cards/sftp-config.json",
@@ -238,52 +255,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "pricing.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 28757,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "services.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 28758,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								256,
+								256
 							]
 						],
 						"settings":
@@ -300,6 +289,72 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "about.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15784,
+								15784
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3956.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/css/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2706,
+								2706
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 430.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
