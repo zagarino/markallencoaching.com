@@ -374,7 +374,9 @@
     width: 100%;
     padding: 1rem;
   }
-
+.form-label-top, .form-label-left, .form-label-right, .form-html, .form-checkbox-item label, .form-radio-item label {
+    color: #f12303 !important;
+}
 /*/LOGIN*/
 
 /* Rare case, non existing view */
