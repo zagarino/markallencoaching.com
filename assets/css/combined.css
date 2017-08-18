@@ -577,8 +577,18 @@ a:active, a:focus, a:hover {
     position: absolute;
     width: 100%;
 }
+
 .pricing-cover {
     background-image: url("https://s3-us-west-2.amazonaws.com/mac-coaching/headers/mac-pricing.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.services-cover {
+    background-image: url("https://s3-us-west-2.amazonaws.com/mac-coaching/headers/mac-services.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;

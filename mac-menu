@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+Hello, ${1:this} is a ${2:snippet}.
+]]></content>
+                    <li> <a href="https://app.markallencoaching.com/">register - login</a> </li>
+                    <hr>
+                    <li> <a href="https://markallencoaching.com/index.html">home</a> </li>
+                    <li> <a href="https://markallencoaching.com/about.html">about mark allen</a> </li>
+                    <li> <a href="https://markallencoaching.com/IMX12.html">IMX12 - my stories from kona</a> </li>
+                    <li> <a href="https://markallencoaching.com/services.html">services</a> </li>
+                    <li> <a href="https://markallencoaching.com/pricing.html">pricing</a> </li>
+                    <li> <a href="https://markallencoaching.com/resources.html">resources</a> </li>
+                    <li> <a href="https://markallencoaching.com/photos.html">photos</a> </li>
+                    <li> <a href="https://markallencoaching.com/videos.html">videos</a> </li>
+                    <li> <a href="https://markallencoaching.com/photographers.html/">photographers</a> </li>
+                    <li> <a href="https://markallencoaching.com/blog/">stories from the road - the blog</a> </li>
+                    <li> <a href="https://markallencoaching.com/contact.html/">contact us</a> </li>
+</snippet>
