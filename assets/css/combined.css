@@ -476,15 +476,15 @@ a:active, a:focus, a:hover {
     width: 100%;
 }
 .about-cover {
-    background-image: url("https://s3-us-west-2.amazonaws.com/mac-coaching/headers/about.jpg");
+    background-image: url("https://s3-us-west-2.amazonaws.com/mac-coaching/headers/upclosebike.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     height: 650px;
     width: 100%;
 }
-.IMX12-cover {
-    background-image: url("https://s3-us-west-2.amazonaws.com/mac-coaching/headers/mark-mom-89-.jpg");
+.imx12-cover {
+    background-image: url("https://s3-us-west-2.amazonaws.com/mac-coaching/headers/mark-mom.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1017,7 +1017,7 @@ main#st-main .material-button:focus {
     box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.5);
     color: #efefef;
 }
-.GF-btn-reg: a:hover {
+.GF-btn-reg a:hover {
     color:#ffffff;
     box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.5);
 }
@@ -1624,7 +1624,7 @@ img.img-responsive pull-left {
     transition: box-shadow 0.25s ease 0s;
     padding: 25px 7% 0;
 }
-}
+    
 .box:hover {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -3186,7 +3186,14 @@ ul.process-steps li.active a, ul.process-steps li.active a:focus, ul.process-ste
     border-color: #f44336;
     width: 175px;
 }
-ul.process-steps li.active h1, ul.process-steps li.active h2, ul.process-steps li.active h3, ul.process-steps li.active h4, ul.process-steps li.active h5, 
+ul.process-steps li.active h1 {
+    border-color: #f44336;
+}
+ul.process-steps li.active h2 {
+    border-color: #f44336;
+}
+ul.process-steps li.active h3 {
+    border-color: #f44336;
 }
 ul.process-steps li.active h6 {
     font-family: "Open Sans",sans-serif;
@@ -3206,21 +3213,6 @@ ul.process-steps li.active h6 {
 }
 .nav-tabs > li.active > a {
     color: #f44336;
-}
-.sky-form .toggle i::before {
-    background-color: #f44336;
-}
-.sky-form .button {
-    background-color: #f44336;
-}
-.sky-form .radio input + i::after {
-    background-color: #f44336;
-}
-.sky-form .checkbox input + i::after {
-    color: #f44336;
-}
-.sky-form .radio input:checked + i, .sky-form .checkbox input:checked + i, .sky-form .toggle input:checked + i {
-    border-color: #f44336;
 }
 .container-pricing {
     margin: 0 auto;

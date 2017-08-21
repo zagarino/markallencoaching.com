@@ -34,7 +34,4 @@ RewriteCond %{REQUEST_FILENAME}\.php -f [OR]
 RewriteCond %{REQUEST_FILENAME}\.cgi -f
 RewriteRule .* %{REQUEST_FILENAME}/ [R=301,L]
 
-> RewriteCond %{HTTP_HOST} ^markallencoaching\.scottzagarino\.com$ [OR]
-> RewriteCond %{HTTP_HOST} ^www\.markallencoaching\.scottzagarino\.com$
-> RewriteRule ^/?$ "http\:\/\/markallencoaching\.net\/" [R=301,L]
 

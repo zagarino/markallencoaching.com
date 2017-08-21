@@ -31,7 +31,9 @@
 	<meta content="https://s3-us-west-2.amazonaws.com/mac-coaching/headers/rm/evolve.jpg" property="og:image">
 	<meta content="Mark Allen Coaching - Triathlon Training and Coaching" property="og:title">
 	<meta content="No matter what any triathlete, article or book tells you, there is no such thing as a one size fits all training program. Age, experience and life circumstances can make the ideal training program look very different year to year even for the same person!" property="og:description">
-	<meta content="https://markallencoaching.com/about" property="og:url">	
+	<meta content="https://markallencoaching.com/evolve" property="og:url">	
+	<meta content="1240916409269980" property="fb:app_id">	
+
 	    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 <!--     schema -->
    <script type="application/ld+json">
@@ -85,24 +87,18 @@
       dataLayer = [];
     </script> <!-- End Google Tag Manager -->
 	<!-- facebook SDK -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
+	<script>
+$(document).ready(function() {
+  $.ajaxSetup({ cache: true });
+  $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
     FB.init({
-      appId      : '1370432819701818',
-      xfbml      : true,
-      version    : 'v2.9'
-    });
-    FB.AppEvents.logPageView();
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+      appId: '1240916409269980',
+      version: 'v2.7'
+    });     
+    $('#loginbutton,#feedbutton').removeAttr('disabled');
+    FB.getLoginStatus(updateStatusCallback);
+  });
+});
 </script>
 	<!-- facebook SDK -->    
 	<!--NAV-->
@@ -117,17 +113,17 @@
 				<ul>
                     <li> <a href="https://app.markallencoaching.com/">register - login</a> </li>
                     <hr>
-                    <li> <a href="https://markallencoaching.com">home</a> </li>
-                    <li> <a href="https://markallencoaching.com/about/">about mark allen</a> </li>
-                    <li> <a href="https://markallencoaching.com/IMX12/">IMX12 - my stories from kona</a> </li>
-                    <li> <a href="https://markallencoaching.com/services/">services</a> </li>
-                    <li> <a href="https://markallencoaching.com/programs/">programs</a> </li>
-                    <li> <a href="https://markallencoaching.com/resources/">resources</a> </li>
-                    <li> <a href="https://markallencoaching.com/photos/">photos</a> </li>
-                    <li> <a href="https://markallencoaching.com/videos/">videos</a> </li>
-                    <li> <a href="https://markallencoaching.com/photographers/">photographers</a> </li>
+                    <li> <a href="https://markallencoaching.com/index.html">home</a> </li>
+                    <li> <a href="https://markallencoaching.com/about.html">about mark allen</a> </li>
+                    <li> <a href="https://markallencoaching.com/IMX12.html">IMX12 - my stories from kona</a> </li>
+                    <li> <a href="https://markallencoaching.com/services.html">services</a> </li>
+                    <li> <a href="https://markallencoaching.com/pricing.html">pricing</a> </li>
+                    <li> <a href="https://markallencoaching.com/resources.html">resources</a> </li>
+                    <li> <a href="https://markallencoaching.com/photos.html">photos</a> </li>
+                    <li> <a href="https://markallencoaching.com/videos.html">videos</a> </li>
+                    <li> <a href="https://markallencoaching.com/photographers.html/">photographers</a> </li>
                     <li> <a href="https://markallencoaching.com/blog/">stories from the road - the blog</a> </li>
-                    <li> <a href="https://markallencoaching.com/contact/">contact us</a> </li>
+                    <li> <a href="https://markallencoaching.com/contact.html/">contact us</a> </li>
 				</ul>
 			</nav>
 		</div>
@@ -178,25 +174,21 @@
 		</div>
 		<!-- /CALLOUT-->
 		<!---BREADCRUMBS-->
-
-
-		<div class="container-fluid">
-			<ol class="breadcrumb breadcrumb-inverse" style="margin-top: -10px;">
-				<li>
-					<a href="https://markallencoaching.com/rm/perspective/">perspective</a>
-				</li>
-
-
-				<li>
-					<a href="https://markallencoaching.com/rm/matrix/">the matrix</a>
-				</li>
-
-
-				<li class="active">
-					<a href="https://markallencoaching.com/rm/evolve/">evolving</a>
-				</li>
-			</ol>
-		</div>
+<ol class="breadcrumb breadcrumb-inverse" style="margin-top: -5px;">
+	<li class="nav-item">
+		<a class="nav-link" href="#"><i class="fa fa-fw fa-2x aria-hidden="true"></i></a> 
+		<h4 style="color: rgb(237, 38, 26);"">Shop Cart</h4>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link active" href="#"><i class="icon-pencil"></i></a>
+		<h5>Review Cart</h5>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#"><i class="icon-ok"></i></a>
+		<h5>Finish</h5>
+	</li>
+</ol>
+</div>
 		<!---BREADCRUMBS-->
 		<!---BLOCKQUOTE -->
 
@@ -283,14 +275,14 @@
 					</div>
 
 
-					<p class="p-2">Setting the course is somewhat easy! Putting a season’s training program
+					<p>Setting the course is somewhat easy! Putting a season’s training program
 					together was a skill I refined until it was second nature. What great coaching can do with
 					that is make sure that the “ideal” does not override the “reality”. No one will ever be able
 					to predict how life is going to influence and demand changes in your training until you start
 					and see what happens.</p>
 
 
-					<p class="p-2">I needed a coach to be the voice of reason and take what I was feeling and
+					<p>I needed a coach to be the voice of reason and take what I was feeling and
 					modify the strategy based on that. When you can do that, the original base program turns into
 					a dynamic ever-evolving high-performance training program that indeed becomes ideal!</p>
 				</div>
@@ -300,18 +292,101 @@
 
 
 	<div class="container-fluid">
-		<div id="spacer-top-sm">
-		</div>
+
 
 
 		<div class="divider divider-dotted">
 		</div>
 
-
-		<div id="spacer-bottom-sm">
 		</div>
 	</div>
+<div class="container">
+          
+          <div class="row-about">
+            <div class="col-xs-12">
+              <p>I became an experiment of one in the trial and error method of becoming world
+                class. I tried everything sensible and certainly a few things that were fairly insane. If
+                something worked, I kept it in my program. If it didn’t make me stronger and faster I dropped
+                it. In the end I developed what proved to be extremely effective ways to reach new heights
+                year after year.
+              </p>
+            </div>
+          <div class="row-about">
+          <div class="mt-50"></div>
+            <div class="col-xs-12">
+              <div class="col-sm-6 pull-right">
+                <p style="margin-top: 20px;">In my career I won the Ironman World Championship in
+                  Hawaii six times, I was the champion of the very first Olympic Distance World Championship
+                  in Avignon, I was victorious in the Nice International Triathlon all ten times I raced it, I
+                  won 20 straight races over a three year period from 1988-1990, and was named The Greatest
+                  Endurance Athlete of All Time by EPSN. There have been huge gains in technology since the
+                  early years of triathlons to help athletes measure and quantify a lot of elements of getting
+                  fit and racing fast that I had to be figure out by simply tuning into my body. But every
+                  piece of the core training wisdom that I used is still the same. To help athletes measure
+                  and quantify a lot of elements of getting fit and racing fast that I had to
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <div class="mt-30"></div>
+               
 
+<script type="text/javascript" src="//services.brid.tv/player/build/brid.min.js"></script> <div id="Brid_03053183" class="brid" style="width:480;height:270;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject"> </div> <script type="text/javascript"> $bp("Brid_03053183", {"id":"8301","width":"480","height":"270","video":"130573"}); </script>
+
+
+              </div>
+            </div>
+            <div class="row-about">
+            <div class="mt-30"></div>
+              <div class="col-xs-12">
+                <p> be figure out by simply tuning into my body, but every piece of the core training wisdom that I used is still the
+                  same. Our genetics have not changed a whole lot since 1982! Those basic workout necessities
+                  can seem repetitive. They can look fairly simple on the surface, but it’s an art form to
+                  bring out the upper limits of what you are capable of. And that can only be learned over an
+                  entire career if you are trying to figure it out on your own, or of course in much less time
+                  if someone shows you how!
+                </p>
+                <p>People sometimes say that after all these years I may have lost touch with
+                  “modern training methods.” My answer is always the same, ” “If I’ve lost touch
+                  then why, in 26 years has no one run a faster marathon at the Ironman in Hawaii than I did
+                  in 1989 when I posted a run split of&nbsp;2:40:04?”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <div class="container">
+      <div class="row-about">
+        <div class="col-sm-12">     
+	        <div class="col-sm-6">
+        <div class="jumbotron" style="padding-bottom: 10px;">
+         <h4 style="color: rgb(237, 38, 26); margin-top: -20px;">A coach can help you evolve your training to be ideal by:</h4>
+          <ol style="color:#777777" ;="">
+            <li>Helping you adapt your training as you both see how you are responding to it.</li>
+    
+            <li>Being the voice of reason and experience if life’s demands require any significant
+					modifications to your training.
+            </li>
+            <p></p>
+            <li>Because I enjoy helping others unravel the intricacies in theirphysical and mental
+              preparation that can take their experience in triathlons from good to great to life
+              changing.
+            </li>
+          </ol>
+        </div>
+</div>
+
+        <div class="col-sm-6 pull-left">
+         <div class="mb-10"></div>
+          <figure class="box-shadow-6">
+          <img class="img-responsive" src="https://s3-us-west-2.amazonaws.com/mac-coaching/grip/87-1.jpg" alt="1987">
+          </figure>
+           <div class="mb-50"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
 
 	<div class="container">
 		<div class="row-about">
@@ -329,8 +404,7 @@
 					</li>
 
 
-					<li>Being the voice of reason and experience if life’s demands require any significant
-					modifications to your training.
+					<li>
 
 						<p>
 						</p>

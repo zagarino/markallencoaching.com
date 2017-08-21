@@ -607,4 +607,181 @@ div.bhoechie-tab-content{
 div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   display: none;
 }
+
+/*breadcrumbs*/
+ul.process-steps, ul.process-steps li {
+    border: 0 none;
+    text-align: center;
+}
+.nav {
+    display: flex;
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+dl, ol, ul {
+    margin-top: 0;
+}
+ul.process-steps li:first-child::before {
+    display: none;
+}
+ul.process-steps li::after, ul.process-steps li::before {
+    border-top: 1px dashed #ddd;
+    content: "";
+    left: -25px;
+    position: absolute;
+    top: 26px;
+    width: 50%;
+}ul.process-steps li::after {
+    left: auto;
+    margin: 0 -26px 0 0;
+    right: 0;
+}
+ul.process-steps li::after, ul.process-steps li::before {
+    border-top: 1px dashed #ddd;
+    content: "";
+    left: -25px;
+    position: absolute;
+    top: 26px;
+    width: 50%;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+.nav-justified .nav-item {
+    -moz-box-flex: 1;
+    flex: 1 1 100%;
+    text-align: center;
+}
+ul.process-steps, ul.process-steps li {
+    border: 0 none;
+}
+.nav > li {
+    display: block;
+    position: relative;
+}
+ul.process-steps li a.active, ul.process-steps li a.active:focus, ul.process-steps li:hover > a.active {
+    background-color: #8ab933;
+    border-color: #8ab933;
+}
+ul.process-steps.process-steps-square li a {
+    border-radius: 3px;
+}
+ul.process-steps li a.active, ul.process-steps li:hover > a.active {
+    color: #fff;
+}
+ul.nav > li > a {
+    display: block;
+}
+ul.process-steps li a {
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+    width: 50px;
+}
+ul.process-steps li:first-child::before {
+    display: none;
+}
+ul.process-steps li::after, ul.process-steps li::before {
+    border-top: 1px dashed #ddd;
+    content: "";
+    left: -25px;
+    position: absolute;
+    top: 26px;
+    width: 50%;
+}
+ul.process-steps li::after {
+    left: auto;
+    margin: 0 -26px 0 0;
+    right: 0;
+}
+ul.process-steps li::after, ul.process-steps li::before {
+    border-top: 1px dashed #ddd;
+    content: "";
+    left: -25px;
+    position: absolute;
+    top: 26px;
+    width: 50%;
+}
+ul.process-steps li a.active, ul.process-steps li a.active:focus, ul.process-steps li:hover > a.active {
+    background-color: #8ab933;
+    border-color: #8ab933;
+}
+ul.process-steps.process-steps-square li a {
+    border-radius: 3px;
+}
+ul.process-steps li a.active, ul.process-steps li:hover > a.active {
+    color: #fff;
+}
+ul.nav > li > a {
+    display: block;
+}
+ul.process-steps li a {
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+    width: 50px;
+}
+a, a:focus, a:hover, a:active {
+    cursor: pointer;
+    outline: 0 none;
+}
+a {
+    transition: all 0.3s ease 0s;
+}
+/*forms*/
+#form {
+  color: white;
+  background-color: #009EDF;
+  border-radius: 5px;
+  width: 400px;
+  padding: 40px;
+  margin: 150px auto;
+  -webkit-box-shadow: -1px 3px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 3px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 3px 18px 0px rgba(0, 0, 0, 0.75);
+}
+#form p {
+  font-size: 0.9em;
+}
+#form button {
+  width: 100%;
+  text-align: center;
+  color: grey;
+  margin-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+body #form .form-group {
+  margin: 15px auto;
+}
+body #form .form-group label {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+body #form .form-group .input-group {
+  border-radius: 5px;
+  -webkit-box-shadow: -1px 3px 18px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: -1px 3px 18px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: -1px 3px 18px 0px rgba(0, 0, 0, 0.35);
+}
+body #form .form-group .input-group .input-group-addon {
+  border: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+body #form .form-group .input-group input {
+  padding-left: 10px;
+}
+body #form .form-group .input-group i {
+  color: #009EDF;
+}
+body #form .form-group input {
+  padding: 3px;
+  width: 100%;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
 }

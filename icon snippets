@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+Hello, ${1:this} is a ${2:snippet}.
+]]></content>
+  fa-step-forward [&#xf051;] <i class="fa fa-fw" aria-hidden="true" title="Copy to use step-forward"></i>
+ 
+   fa-step-backward [&#xf048;] 
+<i class="fa fa-fw" aria-hidden="true" title="Copy to use step-backward"></i>
+
+    fa-users [&#xf0c0;] 
+<i class="fa fa-fw" aria-hidden="true" title="Copy to use user"></i>
+
+    fa-user-circle [&#xf2bd;]
+   <i class="fa fa-fw" aria-hidden="true" title="Copy to use user-circle-o"></i>
+
+    fa-user-circle-o [&#xf2be;]
+   <i class="fa fa-fw" aria-hidden="true" title="Copy to use user-circle"></i>
+
+<i class="fa fa-camera-retro fa-lg"></i> fa-lg
+<i class="fa fa-camera-retro fa-2x"></i> fa-2x
+<i class="fa fa-camera-retro fa-3x"></i> fa-3x
+<i class="fa fa-camera-retro fa-4x"></i> fa-4x
+<i class="fa fa-camera-retro fa-5x"></i> fa-5x
+</snippet>
